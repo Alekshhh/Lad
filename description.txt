@@ -1,0 +1,24 @@
+Terraria has awful item scaling, so with this mod I attempt to improve it by buffing near pointless weapons and nerfing common top choices, as well as other nifty things.
+
+Features:
+- Improved weapon stats, for the better and for the worst
+- Increased drop rates for some weapons
+- Added descriptions and debuffs for most weapons
+- Added special attacks and effects to some weapons
+- Added recipes for some weapons
+- Shortswords are probably better, dunno
+- Reaver Shark ;)
+
+Currently finished:
+- Pre-HM Melee : ye we good
+- HM Melee : no
+- Pre-HM Ranged : will try working on
+- HM Ranged : nah
+- Pre-HM Mage : nada
+- HM Mage : nyet
+- don't even get me started on the others
+- Other (Armor, Tools, etc) : sorta
+
+Shark Lad will try his best to make you not wish you weren't born while playing this game!
+
+Thank you to: Yuyutsu, Ozzatron, Dominic K, pixlgray, termigator, Zach, Uncle Danny, Fabsol and gourd for all the coding aid!
