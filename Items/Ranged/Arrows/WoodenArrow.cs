@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Lad.Items.Ranged.Bows {
+namespace Lad.Items.Ranged.Arrows {
 	public class WoodBows : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.WoodenArrow) { // Need the if statement for specified weapon!
