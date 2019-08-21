@@ -19,8 +19,8 @@ namespace Lad.Items.Ranged.Bows {
 			
 			if (item.type == ItemID.ShadewoodBow || item.type == ItemID.EbonwoodBow) {
 				item.damage = 6;
-				item.useTime = 26;
-				item.useAnimation = 26;
+				item.useTime = 24;
+				item.useAnimation = 24;
 			}
 			
 			if (item.type == ItemID.CopperBow || item.type == ItemID.TinBow) {
