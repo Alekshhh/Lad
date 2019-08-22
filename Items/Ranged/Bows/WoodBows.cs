@@ -37,14 +37,14 @@ namespace Lad.Items.Ranged.Bows {
 			
 			if (item.type == ItemID.SilverBow || item.type == ItemID.TungstenBow) {
 				item.damage = 12;
-				item.useTime = 24;
-				item.useAnimation = 24;
+				item.useTime = 26;
+				item.useAnimation = 26;
 			}
 			
 			if (item.type == ItemID.GoldBow || item.type == ItemID.PlatinumBow) {
 				item.damage = 14;
-				item.useTime = 26;
-				item.useAnimation = 26;
+				item.useTime = 28;
+				item.useAnimation = 28;
 			}
 		}
 	}
