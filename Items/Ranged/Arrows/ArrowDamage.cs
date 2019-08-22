@@ -41,7 +41,7 @@ namespace Lad.Items.Ranged.Arrows {
 				item.damage = 16;
 			}
 			
-			if (item.type == ItemID.LuminiteArrow) {
+			if (item.type == ItemID.MoonlordArrow) {
 				item.damage = 18;
 			}
 		}
