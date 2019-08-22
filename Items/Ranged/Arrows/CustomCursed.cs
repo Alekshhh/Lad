@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Lad.Items.Ranged.Arrows {
 	public class CustomCursed : ModProjectile {
-		public override void SetDefaults(Projectile projectile) { // Specific to items.
+		public override void SetDefaults() { // Specific to items.
 			projectile.CloneDefaults(ProjectileID.WoodenArrowFriendly);
 		}
 		
@@ -15,7 +15,7 @@ namespace Lad.Items.Ranged.Arrows {
 			}
 		}
 		
-		public virtual void OnHitNPC(NPC target, int damage, float knockback, bool crit) {
+		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit) {
 			target.AddBuff(BuffID.CursedInferno, 60);
 		}
 	}
