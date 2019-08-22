@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 namespace Lad.Items.Ranged.Arrows {
 	public class CustomCursed : ModProjectile {
 		public override void SetDefaults() { // Specific to items.
-			projectile.CloneDefaults(ProjectileID.WoodenArrow);
+			aiType = ProjectileID.WoodenArrowFriendly;
 		}
 		
 		public override void AI() {
