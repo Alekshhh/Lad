@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace Lad.Items.Ranged.Arrows {
 	public class CustomCursed : ModProjectile {
-		public override void SetDefaults(Item item) { // Specific to items.
+		public override void SetDefaults(Projectile projectile) { // Specific to items.
 			projectile.CloneDefaults(ProjectileID.WoodenArrowFriendly);
 		}
 		
