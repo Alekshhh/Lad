@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace Lad.Items.Ranged.Arrows {
 	public class CustomCursed : ModProjectile {
