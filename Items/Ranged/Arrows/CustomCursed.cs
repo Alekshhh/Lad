@@ -9,7 +9,7 @@ namespace Lad.Items.Ranged.Arrows {
 			projectile.CloneDefaults(ProjectileID.WoodenArrowFriendly);
 		}
 		
-		public override void AI(Projectile projectile) {
+		public override void AI() {
 			if (Main.rand.NextBool(2)) {
 				int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 75, 0, 0, 0, default(Color), 3f);
 				Main.dust[dustIndex].noGravity = true;
