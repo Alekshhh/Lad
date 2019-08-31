@@ -6,15 +6,15 @@ Features:
 - Added descriptions and debuffs for most weapons
 - Added special attacks and effects to some weapons
 - Added recipes for some weapons
-- Shortswords are probably better, dunno
 - Reaver Shark ;)
+- Sandmeme
 
 Currently finished:
 - Pre-HM Melee : ye we good
 - HM Melee : no
-- Pre-HM Ranged : will try working on
+- Pre-HM Ranged : we gucci now
 - HM Ranged : nah
-- Pre-HM Mage : nada
+- Pre-HM Mage : on the way probably
 - HM Mage : nyet
 - don't even get me started on the others
 - Other (Armor, Tools, etc) : sorta
