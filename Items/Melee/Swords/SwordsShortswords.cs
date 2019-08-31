@@ -42,6 +42,22 @@ namespace Lad.Items.Melee.Swords {
 			if (item.type == ItemID.GoldBroadsword || item.type == ItemID.PlatinumBroadsword) {
 				item.damage = 16;
 			}
+			
+			if (item.type == ItemID.WoodenSword) {
+				item.damage = 4;
+			}
+			
+			if (item.type == ItemID.PalmWoodSword || item.type == ItemID.BorealWoodSword || item.type == ItemID.RichMahoganySword) {
+				item.damage = 6;
+			}
+			
+			if (item.type == ItemID.EbonwoodSword || item.type == ItemID.ShadewoodSword) {
+				item.damage = 8;
+			}
+			
+			if (item.type == ItemID.PearlwoodSword) {
+				item.damage = 12;
+			}
 		}
 	}
 }

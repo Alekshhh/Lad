@@ -7,7 +7,7 @@ namespace Lad.Items.Melee.Swords {
     public class EnchantedSword : GlobalItem { // Specific to items.
         public override void SetDefaults(Item item) { // Need the if statement for specified weapon!
             if (item.type == ItemID.EnchantedSword) {
-                item.damage = 18;
+                item.damage = 12;
 			}
 		}
 

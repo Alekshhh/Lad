@@ -32,7 +32,7 @@ namespace Lad {
 // Thanks Yuyutsu!
 			Player closest = Main.player[(int)Player.FindClosest(npc.position, npc.width, npc.height)];
 			if (closest.ZoneUnderworldHeight) {
-				if (Main.rand.NextFloat() < .0500f) Item.NewItem(npc.getRect(), ItemID.Cascade);
+				if (Main.rand.NextFloat() < .0100f) Item.NewItem(npc.getRect(), ItemID.Cascade);
 			}
 			if (npc.type == NPCID.Skeleton) {
 				if (Main.rand.NextFloat() < .0500f) Item.NewItem(npc.getRect(), ItemID.BoneSword);

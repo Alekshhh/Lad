@@ -26,7 +26,7 @@ namespace Lad.Items.Melee.Yoyos {
 		}
 		
 		public override void GetWeaponCrit(Item item, Player player, ref int crit) {
-			if (item.type == ItemID.Muramasa) {
+			if (item.type == ItemID.Valor) {
 				if (player.FindBuffIndex(mod.BuffType("Eagle")) > -1) crit += 6;
 			}
 		}

@@ -19,6 +19,4 @@ Currently finished:
 - don't even get me started on the others
 - Other (Armor, Tools, etc) : sorta
 
-Shark Lad will try his best to make you not wish you weren't born while playing this game!
-
-Thank you to: Yuyutsu, Ozzatron, Dominic K, pixlgray, termigator, Zach, Uncle Danny, Fabsol and gourd for all the coding aid!
+Thank you to: Yuyutsu, Ozzatron, pixlgray, Dominic K, termigator, Zach, Uncle Danny, Fabsol and gourd for all the coding aid!

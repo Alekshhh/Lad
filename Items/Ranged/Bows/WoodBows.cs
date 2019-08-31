@@ -6,7 +6,7 @@ namespace Lad.Items.Ranged.Bows {
 	public class WoodBows : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.WoodenBow) { // Need the if statement for specified weapon!
-				item.damage = 2;
+				item.damage = 3;
 				item.useTime = 28;
 				item.useAnimation = 28;
 			}
@@ -19,8 +19,8 @@ namespace Lad.Items.Ranged.Bows {
 			
 			if (item.type == ItemID.ShadewoodBow || item.type == ItemID.EbonwoodBow) {
 				item.damage = 6;
-				item.useTime = 24;
-				item.useAnimation = 24;
+				item.useTime = 26;
+				item.useAnimation = 26;
 			}
 			
 			if (item.type == ItemID.CopperBow || item.type == ItemID.TinBow) {

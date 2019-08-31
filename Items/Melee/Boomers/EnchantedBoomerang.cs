@@ -8,7 +8,7 @@ namespace Lad.Items.Melee.Boomers {
 		public override void SetDefaults(Item item) { // Need the if statement for specified weapon!
             if (item.type == ItemID.EnchantedBoomerang) {
 				item.crit = 6;
-				item.damage = 10;
+				item.damage = 12;
 				item.shoot = mod.ProjectileType("CustomEnchanted");
 			}
 		}

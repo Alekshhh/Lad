@@ -26,8 +26,8 @@ namespace Lad.Items.Melee.Swords {
 			if (item.type == ItemID.BladeofGrass) {
 				TooltipLine line1 = new TooltipLine(mod, "Damage", "Has a chance to envenom enemies on hit"); // This code adds tooltips.
                 tooltips.Add(line1);
-            foreach (TooltipLine line2 in tooltips) { // This code changes existing tooltips.
-                if (line2.mod == "Terraria" && line2.Name == "Tooltip0") line2.text = "Causes enemies to get poisoned on hit";
+				foreach (TooltipLine line2 in tooltips) { // This code changes existing tooltips.
+					if (line2.mod == "Terraria" && line2.Name == "Tooltip0") line2.text = "Causes enemies to get poisoned on hit";
 				}
 			}
 		}

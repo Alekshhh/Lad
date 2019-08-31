@@ -47,6 +47,16 @@ namespace Lad {
 			recipe.AddTile(TileID.DemonAltar);
 			recipe.SetResult(ItemID.EnchantedSword);
 			recipe.AddRecipe();
+			
+			recipe = new ModRecipe(this);
+			recipe.AddIngredient(ItemID.FlintlockPistol);
+			recipe.AddIngredient(ItemID.IllegalGunParts);
+			recipe.AddIngredient(ItemID.RedPaint, 5);
+			recipe.AddIngredient(ItemID.GreenPaint, 5);
+			recipe.AddIngredient(ItemID.BluePaint, 5);
+			recipe.AddTile(TileID.Anvils);
+			recipe.SetResult(ItemID.PainterPaintballGun);
+			recipe.AddRecipe();
 		}
 	}
 }

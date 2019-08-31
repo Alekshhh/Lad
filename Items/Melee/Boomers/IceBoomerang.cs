@@ -7,7 +7,7 @@ namespace Lad.Items.Melee.Boomers {
 	public class IceBoomerang : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.IceBoomerang) { // Need the if statement for specified weapon!
-				item.damage = 12;
+				item.damage = 10;
 			}
 		}
 			

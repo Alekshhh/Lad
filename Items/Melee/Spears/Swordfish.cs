@@ -7,9 +7,9 @@ namespace Lad.Items.Melee.Spears {
 	public class Swordfish : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.Swordfish) { // Need the if statement for specified weapon!
-				item.damage = 18;
-				item.useTime = 16;
-				item.useAnimation = 16;
+				item.damage = 8;
+				item.useTime = 20;
+				item.useAnimation = 20;
 				item.crit = 6;
 				item.autoReuse = true;
 			}
