@@ -10,6 +10,7 @@ Features:
 - Sandmeme
 - :crab: MANA SICKNESS IS GONE :crab:
 - Mana Flower now reduces 20% magic damage
+- Critical strike chance now caps at 50%
 
 Currently finished:
 - Pre-HM Melee : ye we good
