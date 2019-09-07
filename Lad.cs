@@ -1,5 +1,9 @@
-using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace Lad {
     class Lad : Mod {
@@ -11,7 +15,7 @@ namespace Lad {
             };
         }
 		
-		public override void AddRecipes() { // I'm sorry for what you're about to witness
+		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(this);
 			recipe.AddIngredient(ItemID.GoldBroadsword);
 			recipe.AddIngredient(ItemID.DemoniteBar, 10);
@@ -57,6 +61,111 @@ namespace Lad {
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(ItemID.PainterPaintballGun);
 			recipe.AddRecipe();
+			
+			recipe = new ModRecipe(this);
+			recipe.AddRecipeGroup("Wood", 4);
+			recipe.AddIngredient(ItemID.Daybloom);
+			recipe.AddIngredient(ItemID.Torch, 2);
+			recipe.AddTile(TileID.WorkBenches);
+			recipe.SetResult(ItemID.WandofSparking);
+			recipe.AddRecipe();
+			
+			recipe = new ModRecipe(this);
+			recipe.AddIngredient(ItemID.Book);
+			recipe.AddIngredient(ItemID.Waterleaf, 5);
+			recipe.AddIngredient(ItemID.WaterBucket);
+			recipe.AddIngredient(ItemID.ManaCrystal, 2);
+			recipe.AddTile(TileID.Bookcases);
+			recipe.SetResult(ItemID.WaterBolt);
+			recipe.AddRecipe();
+			
+            List<Recipe> rec = Main.recipe.ToList();
+            rec.Where(x => x.createItem.type == ItemID.AmethystStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.CopperBar, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Amethyst, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.AmethystStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.TopazStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.TinBar, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Topaz, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.TopazStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.SapphireStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.SilverBar, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Sapphire, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.SapphireStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.EmeraldStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.TungstenBar, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Emerald, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.EmeraldStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.RubyStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.GoldBar, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Ruby, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.RubyStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.DiamondStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.PlatinumBar, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Diamond, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.DiamondStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.AmberStaff).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.FossilOre, false);
+                s.requiredItem[0].stack = 10;
+				s.requiredItem[1].SetDefaults(ItemID.Amber, false);
+                s.requiredItem[1].stack = 1;
+
+                s.createItem.SetDefaults(ItemID.AmberStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+            Main.recipe = rec.ToArray();
+            Array.Resize(ref Main.recipe, Recipe.maxRecipes);
 		}
 	}
 }

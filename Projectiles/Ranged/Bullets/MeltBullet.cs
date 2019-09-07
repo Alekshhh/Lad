@@ -32,10 +32,6 @@ namespace Lad.Projectiles.Ranged.Bullets {
 		
 		public override bool OnTileCollide(Vector2 oldVelocity) {
 			Main.PlaySound(SoundID.Dig, projectile.position);
-			for (int i = 0; i < 20; i++) {
-				int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 127, 0, 0, 0, default(Color), 1f);
-				Main.dust[dustIndex].velocity *= 2f;
-			}
             return true;
 		}
 		

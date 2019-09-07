@@ -41,5 +41,13 @@ namespace Lad {
 				if (Main.rand.NextFloat() < .0500f) Item.NewItem(npc.getRect(), ItemID.ChainKnife);
 			}
 		}
+		
+		public override void SetupShop(int type, Chest shop, ref int nextSlot) {
+			if (type == NPCID.Clothier) {
+				shop.item[nextSlot].SetDefaults(ItemID.BookofSkulls);
+				shop.item[nextSlot].shopCustomPrice = 100000;
+				nextSlot++;
+			}
+		}
 	}
 }
