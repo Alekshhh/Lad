@@ -8,7 +8,7 @@ namespace Lad.Items.Mage.Wands {
 		public override void SetDefaults(Item item) {
 			if (item.type == ItemID.FlowerofFire) {
 				item.knockBack = 4;
-				item.damage = 32;
+				item.damage = 25;
 				item.mana = 12;
 				item.autoReuse = true;
 			}

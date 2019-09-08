@@ -7,7 +7,7 @@ namespace Lad.Items.Melee.Yoyos {
 	public class Cascade : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.Cascade) { // Need the if statement for specified weapon!
-				item.damage = 20;
+				item.damage = 16;
 				item.knockBack = 4.5f;
 			}
 		}

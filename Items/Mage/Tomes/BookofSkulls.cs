@@ -7,7 +7,7 @@ namespace Lad.Items.Mage.Tomes {
 	public class BookofSkulls : GlobalItem {
 		public override void SetDefaults(Item item) {
 			if (item.type == ItemID.BookofSkulls) {
-				item.damage = 40;
+				item.damage = 35;
 				item.mana = 14;
 				item.knockBack = 4;
 				item.shootSpeed = 4;

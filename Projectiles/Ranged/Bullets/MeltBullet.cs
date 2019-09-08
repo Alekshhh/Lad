@@ -15,7 +15,7 @@ namespace Lad.Projectiles.Ranged.Bullets {
             projectile.friendly = true;
 			projectile.ignoreWater = true; 
 			projectile.tileCollide = true;
-			projectile.timeLeft = 80;
+			projectile.timeLeft = 45;
 		}
 		
 		public override void AI() {

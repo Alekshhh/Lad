@@ -7,8 +7,8 @@ namespace Lad.Items.Melee.Flails {
 	public class ChainKnife : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.ChainKnife) { // Need the if statement for specified weapon!
-				item.damage = 8;
-				item.knockBack = 3f;
+				item.damage = 6;
+				item.knockBack = 1f;
 				item.autoReuse = true;
 				item.crit = 4;
 			}

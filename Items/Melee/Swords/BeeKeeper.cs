@@ -6,7 +6,7 @@ namespace Lad.Items.Melee.Swords {
 	public class BeeKeeper : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.BeeKeeper) { // Need the if statement for specified weapon!
-				item.damage = 20;
+				item.damage = 18;
 				item.useTime = 18;
 				item.useAnimation = 18;
 				item.knockBack = 6;

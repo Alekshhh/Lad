@@ -8,8 +8,8 @@ namespace Lad.Items.Melee.Swords {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == 198 || item.type == 199 || item.type == 200 || item.type == 201 || item.type == 202 || item.type == 203) { // Need the if statement for specified weapon!
 				item.damage = 18;
-				item.useTime = 18;
-				item.useAnimation = 18;
+				item.useTime = 24;
+				item.useAnimation = 24;
 				item.autoReuse = true;
 			}
 		}

@@ -7,7 +7,7 @@ namespace Lad.Items.Melee.Yoyos {
 	public class Valor : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.Valor) { // Need the if statement for specified weapon!
-				item.damage = 24;
+				item.damage = 20;
 				item.knockBack = 4f;
 			}
 		}

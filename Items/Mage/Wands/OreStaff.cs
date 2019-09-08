@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace Lad.Items.Mage.Wands {
 	public class OreStaff : GlobalItem {
@@ -37,7 +38,7 @@ namespace Lad.Items.Mage.Wands {
 			}
 			
 			if (item.type == ItemID.AmberStaff) {
-				item.damage = 20;
+				item.damage = 14;
 				item.mana = 10;
 				item.useTime = 32;
 				item.useAnimation = 32;
@@ -59,6 +60,13 @@ namespace Lad.Items.Mage.Wands {
 				return false;
 			}
 			return true;
+		}
+		
+		public override void ModifyTooltips(Item item, List<TooltipLine> tooltips) {
+            if (item.type == ItemID.AmberStaff) {
+                TooltipLine line1 = new TooltipLine(mod, "Damage", "Fires three amber bolts at once");
+                tooltips.Add(line1);
+			}
 		}
 	}
 }

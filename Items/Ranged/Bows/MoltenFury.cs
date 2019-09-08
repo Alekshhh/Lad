@@ -8,7 +8,7 @@ namespace Lad.Items.Ranged.Bows {
 	public class MoltenFury : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.MoltenFury) { // Need the if statement for specified weapon!
-				item.damage = 20;
+				item.damage = 24;
 				item.useTime = 30;
 				item.useAnimation = 30;
 			}

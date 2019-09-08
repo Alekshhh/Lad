@@ -7,7 +7,7 @@ namespace Lad.Items.Melee.Flails {
 	public class Sunfury : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.Sunfury) { // Need the if statement for specified weapon!
-				item.damage = 38;
+				item.damage = 42;
 				item.knockBack = 7.5f;
 				item.crit = 0;
 			}

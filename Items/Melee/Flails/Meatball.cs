@@ -7,7 +7,7 @@ namespace Lad.Items.Melee.Flails {
     public class Meatball : GlobalItem { // Specific to items.
         public override void SetDefaults(Item item) { // Need the if statement for specified weapon!
             if (item.type == ItemID.TheMeatball) {
-                item.damage = 14;
+                item.damage = 16;
 			}
 		}
 

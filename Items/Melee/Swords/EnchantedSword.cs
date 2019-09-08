@@ -8,6 +8,8 @@ namespace Lad.Items.Melee.Swords {
         public override void SetDefaults(Item item) { // Need the if statement for specified weapon!
             if (item.type == ItemID.EnchantedSword) {
                 item.damage = 12;
+				item.useTime = 24;
+				item.useAnimation = 24;
 			}
 		}
 

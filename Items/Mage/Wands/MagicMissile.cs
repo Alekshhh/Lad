@@ -6,7 +6,7 @@ namespace Lad.Items.Mage.Wands {
 	public class MagicMissile : GlobalItem {
 		public override void SetDefaults(Item item) {
 			if (item.type == ItemID.MagicMissile) {
-				item.damage = 35;
+				item.damage = 25;
 				item.mana = 10;
 				item.crit = 6;
 				item.useTime = 20;

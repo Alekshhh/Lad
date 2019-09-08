@@ -11,6 +11,8 @@ namespace Lad.Items.Mage.Tomes {
 				item.mana = 6;
 				item.knockBack = 4;
 				item.shootSpeed = 6;
+				item.useTime = 24;
+				item.useAnimation = 24;
 			}
 		}
 		

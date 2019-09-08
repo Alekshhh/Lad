@@ -8,7 +8,7 @@ namespace Lad.Items.Ranged.Bows {
 	public class HellwingBow : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.HellwingBow) { // Need the if statement for specified weapon!
-				item.damage = 12;
+				item.damage = 10;
 				item.autoReuse = true;
 				item.useTime = 6;
 				item.useAnimation = 6;

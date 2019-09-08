@@ -8,7 +8,7 @@ namespace Lad.Items.Ranged.Bows {
 	public class BeesKnees : GlobalItem {
 		public override void SetDefaults(Item item) { // Specific to items.
 			if (item.type == ItemID.BeesKnees) { // Need the if statement for specified weapon!
-				item.damage = 18;
+				item.damage = 14;
 				item.autoReuse = true;
 				item.useTime = 26;
 				item.useAnimation = 26;
