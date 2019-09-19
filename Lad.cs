@@ -79,6 +79,22 @@ namespace Lad {
 			recipe.SetResult(ItemID.WaterBolt);
 			recipe.AddRecipe();
 			
+			recipe = new ModRecipe(this);
+			recipe.AddIngredient(ItemID.Silk, 20);
+			recipe.AddIngredient(ItemID.WarmthPotion, 5);
+			recipe.AddIngredient(ItemID.Shiverthorn, 3);
+			recipe.AddTile(TileID.Loom);
+			recipe.SetResult(ItemID.HandWarmer);
+			recipe.AddRecipe();
+			
+			recipe = new ModRecipe(this);
+			recipe.AddIngredient(ItemID.BottledWater);
+			recipe.AddIngredient(ItemID.PinkGel, 5);
+			recipe.AddIngredient(ItemID.Mushroom, 1);
+			recipe.AddTile(TileID.Bottles);
+			recipe.SetResult(ItemID.LesserRestorationPotion);
+			recipe.AddRecipe();
+			
             List<Recipe> rec = Main.recipe.ToList();
             rec.Where(x => x.createItem.type == ItemID.AmethystStaff).ToList().ForEach(s => {
                 for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
@@ -161,6 +177,18 @@ namespace Lad {
                 s.requiredItem[1].stack = 1;
 
                 s.createItem.SetDefaults(ItemID.AmberStaff, false);
+                s.createItem.stack = 1;
+            });
+			
+			rec.Where(x => x.createItem.type == ItemID.RestorationPotion).ToList().ForEach(s => {
+                for (int i = 0; i < s.requiredItem.Length; i++) s.requiredItem[i] = new Item();
+
+                s.requiredItem[0].SetDefaults(ItemID.LesserRestorationPotion, false);
+                s.requiredItem[0].stack = 1;
+				s.requiredItem[1].SetDefaults(ItemID.GlowingMushroom, false);
+                s.requiredItem[1].stack = 3;
+
+                s.createItem.SetDefaults(ItemID.RestorationPotion, false);
                 s.createItem.stack = 1;
             });
 			
