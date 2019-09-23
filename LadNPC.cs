@@ -49,5 +49,13 @@ namespace Lad {
 				nextSlot++;
 			}
 		}
+		
+		public override void AI(NPC npc) {
+			if (npc.type == NPCID.GreenSlime || npc.type == NPCID.BlueSlime || npc.type == NPCID.PurpleSlime) {
+				if (NPC.CountNPCS(NPCID.KingSlime) > 0 || Main.slimeRain)
+				npc.active = true;
+				else npc.active = false;
+			}
+		}
 	}
 }
